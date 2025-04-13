@@ -1,4 +1,4 @@
-assay	forward	reverse	target_gene	target_region	amplicon_size	reference	link
+assay	forward	reverse	gene	target_region	amplicon_size	reference	link
 geller_COI	jgLCO1490	jgHCO2198	COI			Geller et al. 2013. Redesign of PCR primers for mitochondrial Cytochrome c oxidase subunit I for marine invertebrates and application in all-taxa biotic surveys.	https://doi.org/10.1111/1755-0998.12138
 leray_COI	mlCOIintF	jgHCO2198	COI		313	Leray et al. 2013. A new versatile primer set targeting a short fragment of the mitochondrial COI region for metabarcoding metazoan diversity: application for characterizing coral reef fish gut contents.	https://doi.org/10.1186/1742-9994-10-34
 MiFish-U	MiFish-U-F	MiFish-U-R	12S		163-185	Miya et al. 2015. MiFish, a set of universal PCR primers for metabarcoding environmental DNA from fishes: detection of more than 230 subtropical marine species.	https://doi.org/10.1098/rsos.150088

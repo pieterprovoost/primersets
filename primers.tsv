@@ -1,4 +1,4 @@
-code	name	target_gene	target_region	direction	sequence	based_on	reference	link
+code	name	gene	region	direction	sequence	based_on	reference	link
 jgLCO1490		COI		forward	TITCIACIAAYCAYAARGAYATTGG		Geller et al. 2013. Redesign of PCR primers for mitochondrial Cytochrome c oxidase subunit I for marine invertebrates and application in all-taxa biotic surveys.	https://doi.org/10.1111/1755-0998.12138
 jgHCO2198		COI		reverse	TAIACYTCIGGRTGICCRAARAAYCA		Geller et al. 2013. Redesign of PCR primers for mitochondrial Cytochrome c oxidase subunit I for marine invertebrates and application in all-taxa biotic surveys.	https://doi.org/10.1111/1755-0998.12138
 mlCOIintF		COI		forward	GGWACWGGWTGAACWGTWTAYCCYCC		Leray et al. 2013. A new versatile primer set targeting a short fragment of the mitochondrial COI region for metabarcoding metazoan diversity: application for characterizing coral reef fish gut contents.	https://doi.org/10.1186/1742-9994-10-34

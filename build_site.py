@@ -38,8 +38,8 @@ sets_df["forward"] = sets_df["forward"].apply(linkify_code)
 sets_df["reverse"] = sets_df["reverse"].apply(linkify_code)
 sets_df["link"] = sets_df["link"].apply(linkify_url)
 
-sets_df["target_gene"] = sets_df["target_gene"].apply(gene_badge)
-primers_df["target_gene"] = primers_df["target_gene"].apply(gene_badge)
+sets_df["gene"] = sets_df["gene"].apply(gene_badge)
+primers_df["gene"] = primers_df["gene"].apply(gene_badge)
 
 primers_df["code"] = primers_df["code"].apply(
     lambda code: f'<a id="primer-{escape(code)}">{escape(code)}</a>' if code else ""
