@@ -50,6 +50,10 @@ primers_df["based_on"] = primers_df["based_on"].apply(
     lambda code: f'<a href="#primer-{escape(code)}">{escape(code)}</a>' if code else ""
 )
 
+primers_df["sequence"] = primers_df["sequence"].apply(
+    lambda seq: f'<span class="sequence">{seq}</span>' if seq else ""
+)
+
 sets_html = sets_df.to_html(index=False, escape=False, classes="table table-striped table-sm")
 primers_html = primers_df.to_html(index=False, escape=False, classes="table table-striped table-sm")
 

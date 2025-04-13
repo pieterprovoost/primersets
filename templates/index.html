@@ -16,7 +16,6 @@ h1, h2, h3 {
 
 body {
     font-family: system-ui, sans-serif;
-    padding: 2rem;
 }
 
 h1, h2 {
@@ -74,19 +73,45 @@ a:hover {
     color: #a86c42;
     text-decoration-style: solid;
 }
+
+.sequence {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.95em;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow-x: auto;
+    display: inline-block;
+}
 </style>
 </head>
 <body>
-    <h1>Primer Sets</h1>
+    <nav class="navbar navbar-expand-lg" style="background-color: #f4f1ed; padding: 0.5rem 2rem;">
+        <div class="container-fluid" style="padding: 0;">
+            <span class="navbar-brand mb-0 h1" style="font-family: 'EB Garamond', serif; font-weight: 500; color: #3d2b1f;">
+            🧬 Metabarcoding primers and primer sets
+            </span>
+            <a href="https://github.com/pieterprovoost/primersets" class="btn btn-sm" target="_blank"
+            style="background-color: #e6dcd0; color: #3d2b1f; font-weight: 500; text-decoration: none;">
+            View on GitHub
+            </a>
+        </div>
+    </nav>
+    <div class="container-fluid py-3 px-5">
+        <div class="mb-4">
+            <a href="#primer-sets" class="me-3 text-decoration-none" style="color: #8b5e3c;">📚 Primer sets</a>
+            <a href="#primers" class="text-decoration-none" style="color: #8b5e3c;">🧪 Primers</a>
+        </div>
 
-    <h2>Assays</h2>
-    <div class="table-container">
-    {{SETS_TABLE}}
+        <h2 id="primer-sets">Primer sets</h2>
+        <div class="table-container">
+        {{SETS_TABLE}}
+        </div>
+    
+        <h2 id="primers">Primers</h2>
+        <div class="table-container">
+        {{PRIMERS_TABLE}}
+        </div>
     </div>
 
-    <h2>Primers</h2>
-    <div class="table-container">
-    {{PRIMERS_TABLE}}
-    </div>
 </body>
 </html>
