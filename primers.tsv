@@ -37,8 +37,8 @@ A49325		trnL		forward	CGAAATCGGTAGACGCTACG		Taberlet et al. 2006. Power and limi
 B49863		trnL		reverse	GGGGATAGAGGGACTTGAAC		Taberlet et al. 2006. Power and limitations of the chloroplast Trn L (UAA) intron for plant DNA barcoding.	https://doi.org/10.1093/nar/gkl938
 A49425		trnL		forward	GGGCAATCCTGAGCCAA		Taberlet et al. 2006. Power and limitations of the chloroplast Trn L (UAA) intron for plant DNA barcoding.	https://doi.org/10.1093/nar/gkl938
 B49466		trnL		reverse	CCATTGAGTCTCTGCACCTATC		Taberlet et al. 2006. Power and limitations of the chloroplast Trn L (UAA) intron for plant DNA barcoding.	https://doi.org/10.1093/nar/gkl938
-wilderlab_ITS1_F		ITS1		forward	GTGAACCTGCGGAAGGATC		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
-wilderlab_ITS1_R		ITS1		reverse	GATATCCGTTGCCGAGAGTC		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_GV_F		ITS1		forward	GTGAACCTGCGGAAGGATC		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_GV_R		ITS1		reverse	GATATCCGTTGCCGAGAGTC		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
 F785e		16S	V5	forward	GGATTAGATACCCTGGTA		Morey et al. 2006. Species-specific identification of Leptospiraceae by 16S rRNA gene sequencing.	https://doi.org/10.1128/JCM.00670-06
 907R		16S	V5	reverse	CCGTCAATTCMTTTRAGTTT		Lane et al. 1985. Rapid determination of 16S ribosomal RNA sequences for phylogenetic analyses.	https://doi.org/10.1073/pnas.82.20.6955
 wilderlab_WV_F		16S		forward	GACGAGAAGACCCTWTGGAGC	16S_FishSyn_Short_forward	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
