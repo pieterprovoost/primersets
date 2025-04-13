@@ -70,7 +70,6 @@ a {
 }
 
 a:hover {
-    color: #a86c42;
     text-decoration-style: solid;
 }
 
@@ -81,6 +80,11 @@ a:hover {
     white-space: nowrap;
     overflow-x: auto;
     display: inline-block;
+}
+
+.highlight-primer {
+    background-color: #f4e7d4 !important;
+    transition: background-color 0.2s ease;
 }
 </style>
 </head>
@@ -111,6 +115,20 @@ a:hover {
         {{PRIMERS_TABLE}}
         </div>
     </div>
+
+    <script>
+        document.querySelectorAll('.primer-cell').forEach(cell => {
+            const primerName = cell.dataset.primer;
+            cell.addEventListener('mouseenter', () => {
+                document.querySelectorAll(`.primer-cell[data-primer="${primerName}"]`)
+                .forEach(el => el.classList.add('highlight-primer'));
+            });
+            cell.addEventListener('mouseleave', () => {
+                document.querySelectorAll(`.primer-cell[data-primer="${primerName}"]`)
+                .forEach(el => el.classList.remove('highlight-primer'));
+            });
+        });
+    </script>
 
 </body>
 </html>

@@ -4,7 +4,7 @@ from html import escape
 
 
 def linkify_code(code):
-    return f'<a href="#primer-{escape(code)}">{escape(code)}</a>' if code else ""
+    return f'<a class="primer-cell" href="#primer-{escape(code)}" data-primer="{escape(code)}">{escape(code)}</a>' if code else ""
 
 
 def linkify_url(url):
