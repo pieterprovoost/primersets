@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Primer Sets</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<style>
+h1, h2, h3 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #3d2b1f; /* Soft dark brown */
+    margin-bottom: 0.5em;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    padding: 2rem;
+}
+
+h1, h2 {
+    margin-top: 2rem;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+table {
+    white-space: nowrap;
+    border: none;
+}
+
+table th, table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+a[id] {
+    scroll-margin-top: 100px;
+}
+
+.badge-muted {
+    display: inline-block;
+    padding: 0.35em 0.6em;
+    font-size: 0.75em;
+    font-weight: 600;
+    border-radius: 0.25rem;
+}
+
+.badge-coi { background-color: #fdf6e3; color: #6b4226; }
+.badge-16s { background-color: #e6f0e6; color: #4b6043; }
+.badge-18s { background-color: #fbeec1; color: #735d28; }
+.badge-12s { background-color: #dae8fc; color: #3b5998; }
+.badge-its { background-color: #f9d5d3; color: #893d3d; }
+.badge-its1 { background-color: #f6e2b3; color: #8b5e3c; }
+.badge-its2 { background-color: #e3d5ca; color: #5c3b28; }
+.badge-rbcl { background-color: #c1dcdc; color: #335c5c; }
+.badge-trnl { background-color: #cfe8cf; color: #3d5a3d; }
+.badge-cytb { background-color: #e7c6ff; color: #5d3b76; }
+.badge-unknown { background-color: #e5e7eb; color: #374151; }
+
+a {
+    color: #8b5e3c;
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #a86c42;
+    text-decoration-style: solid;
+}
+</style>
+</head>
+<body>
+    <h1>Primer Sets</h1>
+
+    <h2>Assays</h2>
+    <div class="table-container">
+    {{SETS_TABLE}}
+    </div>
+
+    <h2>Primers</h2>
+    <div class="table-container">
+    {{PRIMERS_TABLE}}
+    </div>
+</body>
+</html>
