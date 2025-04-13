@@ -51,4 +51,11 @@ wilderlab_LG_F		12S		forward	CGGCGTAAAGWGTGGTTAGG		Wilkinson et al. 2024. TICI: 
 18S_1F		18S		forward	GCCAGTAGTCATATGCTTGTCT		Pochon et al. 2013. Evaluating detection limits of next-generation sequencing for the surveillance and monitoring of international marine pests.	https://doi.org/10.1371/journal.pone.0073935
 18S_701R		18S		reverse	GGAGCTGGAATTACCGC		Pochon et al. 2013. Evaluating detection limits of next-generation sequencing for the surveillance and monitoring of international marine pests.	https://doi.org/10.1371/journal.pone.0073935
 18S_400R		18S		reverse	GCCTGCTGCCTTCCTT		Pochon et al. 2013. Evaluating detection limits of next-generation sequencing for the surveillance and monitoring of international marine pests.	https://doi.org/10.1371/journal.pone.0073935
-								
+wilderlab_EA_F		COI		forward	TATATAATGTTATTGTAACRGCGC		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_EA_R		COI		reverse	CCCARCATCAAAGGAATCAAYCA		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_ZP_F		16S		forward	GGACGATAAGACCCTATAAADCTT		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_ZP_R		16S		reverse	CGCTGTTATCCCTAAAGTAAYTT		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_XG_F		COI		forward	GCAATYTCCCAGTATCARACACC		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_XG_R		COI		reverse	GCAGCAAGMACGGGGAG		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_YG_F		cytB		forward	CBGAYATCTCYACCGCYTTYTC		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_YG_R		cytB		reverse	AAAGAAAGATGCGCCRTTRGCATG		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
