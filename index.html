@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Primer Sets</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<style>
+h1, h2, h3 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #3d2b1f; /* Soft dark brown */
+    margin-bottom: 0.5em;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+h1, h2 {
+    margin-top: 2rem;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+table {
+    white-space: nowrap;
+    border: none;
+}
+
+table th, table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+a[id] {
+    scroll-margin-top: 100px;
+}
+
+.badge-muted {
+    display: inline-block;
+    padding: 0.35em 0.6em;
+    font-size: 0.75em;
+    font-weight: 600;
+    border-radius: 0.25rem;
+}
+
+.badge-coi { background-color: #fdf6e3; color: #6b4226; }
+.badge-16s { background-color: #e6f0e6; color: #4b6043; }
+.badge-18s { background-color: #fbeec1; color: #735d28; }
+.badge-12s { background-color: #dae8fc; color: #3b5998; }
+.badge-its { background-color: #f9d5d3; color: #893d3d; }
+.badge-its1 { background-color: #f6e2b3; color: #8b5e3c; }
+.badge-its2 { background-color: #e3d5ca; color: #5c3b28; }
+.badge-rbcl { background-color: #c1dcdc; color: #335c5c; }
+.badge-trnl { background-color: #cfe8cf; color: #3d5a3d; }
+.badge-cytb { background-color: #e7c6ff; color: #5d3b76; }
+.badge-unknown { background-color: #e5e7eb; color: #374151; }
+
+a {
+    color: #8b5e3c;
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #a86c42;
+    text-decoration-style: solid;
+}
+
+.sequence {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.95em;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow-x: auto;
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #f4f1ed; padding: 0.5rem 2rem;">
+        <div class="container-fluid" style="padding: 0;">
+            <span class="navbar-brand mb-0 h1" style="font-family: 'EB Garamond', serif; font-weight: 500; color: #3d2b1f;">
+            🧬 Metabarcoding primers and primer sets
+            </span>
+            <a href="https://github.com/pieterprovoost/primersets" class="btn btn-sm" target="_blank"
+            style="background-color: #e6dcd0; color: #3d2b1f; font-weight: 500; text-decoration: none;">
+            View on GitHub
+            </a>
+        </div>
+    </nav>
+    <div class="container-fluid py-3 px-5">
+        <div class="mb-4">
+            <a href="#primer-sets" class="me-3 text-decoration-none" style="color: #8b5e3c;">📚 Primer sets</a>
+            <a href="#primers" class="text-decoration-none" style="color: #8b5e3c;">🧪 Primers</a>
+        </div>
+
+        <h2 id="primer-sets">Primer sets</h2>
+        <div class="table-container">
+        <table border="1" class="dataframe table table-striped table-sm">
+  <thead>
+    <tr style="text-align: right;">
+      <th>assay</th>
+      <th>forward</th>
+      <th>reverse</th>
+      <th>target_gene</th>
+      <th>target_region</th>
+      <th>amplicon_size</th>
+      <th>reference</th>
+      <th>link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>geller_COI</td>
+      <td><a href="#primer-jgLCO1490">jgLCO1490</a></td>
+      <td><a href="#primer-jgHCO2198">jgHCO2198</a></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td></td>
+      <td>Geller et al. 2013. Redesign of PCR primers for mitochondrial Cytochrome c oxidase subunit I for marine invertebrates and application in all-taxa biotic surveys.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12138" target="_blank">https://doi.org/10.1111/1755-0998.12138</a></td>
+    </tr>
+    <tr>
+      <td>leray_COI</td>
+      <td><a href="#primer-mlCOIintF">mlCOIintF</a></td>
+      <td><a href="#primer-jgHCO2198">jgHCO2198</a></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>313</td>
+      <td>Leray et al. 2013. A new versatile primer set targeting a short fragment of the mitochondrial COI region for metabarcoding metazoan diversity: application for characterizing coral reef fish gut contents.</td>
+      <td><a href="https://doi.org/10.1186/1742-9994-10-34" target="_blank">https://doi.org/10.1186/1742-9994-10-34</a></td>
+    </tr>
+    <tr>
+      <td>MiFish-U</td>
+      <td><a href="#primer-MiFish-U-F">MiFish-U-F</a></td>
+      <td><a href="#primer-MiFish-U-R">MiFish-U-R</a></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>163-185</td>
+      <td>Miya et al. 2015. MiFish, a set of universal PCR primers for metabarcoding environmental DNA from fishes: detection of more than 230 subtropical marine species.</td>
+      <td><a href="https://doi.org/10.1098/rsos.150088" target="_blank">https://doi.org/10.1098/rsos.150088</a></td>
+    </tr>
+    <tr>
+      <td>MiFish-E</td>
+      <td><a href="#primer-MiFish-E-F">MiFish-E-F</a></td>
+      <td><a href="#primer-MiFish-E-R">MiFish-E-R</a></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>163-185</td>
+      <td>Miya et al. 2015. MiFish, a set of universal PCR primers for metabarcoding environmental DNA from fishes: detection of more than 230 subtropical marine species.</td>
+      <td><a href="https://doi.org/10.1098/rsos.150088" target="_blank">https://doi.org/10.1098/rsos.150088</a></td>
+    </tr>
+    <tr>
+      <td>MiMammal-U</td>
+      <td><a href="#primer-MiMammal-U-F">MiMammal-U-F</a></td>
+      <td><a href="#primer-MiMammal-U-R">MiMammal-U-R</a></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td></td>
+      <td>Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12690" target="_blank">https://doi.org/10.1111/1755-0998.12690</a></td>
+    </tr>
+    <tr>
+      <td>MiMammal-E</td>
+      <td><a href="#primer-MiMammal-E-F">MiMammal-E-F</a></td>
+      <td><a href="#primer-MiMammal-E-R">MiMammal-E-R</a></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td></td>
+      <td>Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12690" target="_blank">https://doi.org/10.1111/1755-0998.12690</a></td>
+    </tr>
+    <tr>
+      <td>MiMammal-B</td>
+      <td><a href="#primer-MiMammal-B-F">MiMammal-B-F</a></td>
+      <td><a href="#primer-MiMammal-B-R">MiMammal-B-R</a></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td></td>
+      <td>Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12690" target="_blank">https://doi.org/10.1111/1755-0998.12690</a></td>
+    </tr>
+    <tr>
+      <td>valentini_12S</td>
+      <td><a href="#primer-L1848">L1848</a></td>
+      <td><a href="#primer-H1913">H1913</a></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td></td>
+      <td>Valentini et al. 2016. Next-generation monitoring of aquatic biodiversity using environmental DNA metabarcoding.</td>
+      <td><a href="https://doi.org/10.1111/mec.13428" target="_blank">https://doi.org/10.1111/mec.13428</a></td>
+    </tr>
+    <tr>
+      <td>Vert-16S-eDNA</td>
+      <td><a href="#primer-Vert-16S-eDNA-F1">Vert-16S-eDNA-F1</a></td>
+      <td><a href="#primer-Vert-16S-eDNA-R1">Vert-16S-eDNA-R1</a></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>250</td>
+      <td>Vences et al. 2016. Freshwater vertebrate metabarcoding on Illumina platforms using double-indexed primers of the mitochondrial 16S rRNA gene.</td>
+      <td><a href="https://doi.org/10.1007/s12686-016-0550-y" target="_blank">https://doi.org/10.1007/s12686-016-0550-y</a></td>
+    </tr>
+    <tr>
+      <td>amaral_zettler_18S</td>
+      <td><a href="#primer-1389F">1389F</a></td>
+      <td><a href="#primer-1510R">1510R</a></td>
+      <td><span class="badge-muted badge-18s">18S</span></td>
+      <td>V9</td>
+      <td></td>
+      <td>Amaral-Zettler et al. 2009. A Method for Studying Protistan Diversity Using Massively Parallel Sequencing of V9 Hypervariable Regions of Small-Subunit Ribosomal RNA Genes.</td>
+      <td><a href="https://doi.org/10.1371/journal.pone.0006372" target="_blank">https://doi.org/10.1371/journal.pone.0006372</a></td>
+    </tr>
+    <tr>
+      <td>16S_FishSyn_Short</td>
+      <td><a href="#primer-16S_FishSyn_Short_forward">16S_FishSyn_Short_forward</a></td>
+      <td><a href="#primer-16S_FishSyn_Short_reverse">16S_FishSyn_Short_reverse</a></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>80</td>
+      <td>Nester et al. 2020. Development and evaluation of fish eDNA metabarcoding assays facilitate the detection of cryptic seahorse taxa (family: Syngnathidae).</td>
+      <td><a href="https://doi.org/10.1002/edn3.93" target="_blank">https://doi.org/10.1002/edn3.93</a></td>
+    </tr>
+    <tr>
+      <td>16S_FishSyn_Long</td>
+      <td><a href="#primer-16S_FishSyn_Long_forward">16S_FishSyn_Long_forward</a></td>
+      <td><a href="#primer-16S_FishSyn_Long_reverse">16S_FishSyn_Long_reverse</a></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>200</td>
+      <td>Nester et al. 2020. Development and evaluation of fish eDNA metabarcoding assays facilitate the detection of cryptic seahorse taxa (family: Syngnathidae).</td>
+      <td><a href="https://doi.org/10.1002/edn3.93" target="_blank">https://doi.org/10.1002/edn3.93</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_BE</td>
+      <td><a href="#primer-1380F">1380F</a></td>
+      <td><a href="#primer-1510R">1510R</a></td>
+      <td><span class="badge-muted badge-18s">18S</span></td>
+      <td>V9</td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_BU</td>
+      <td><a href="#primer-1389F">1389F</a></td>
+      <td><a href="#primer-1510R">1510R</a></td>
+      <td><span class="badge-muted badge-18s">18S</span></td>
+      <td>V9</td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_CI</td>
+      <td><a href="#primer-wilderlab_fwhF2">wilderlab_fwhF2</a></td>
+      <td><a href="#primer-wilderlab_coi_reverse">wilderlab_coi_reverse</a></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_MZ</td>
+      <td><a href="#primer-rbcL19b">rbcL19b</a></td>
+      <td><a href="#primer-wilderlab_rbclZ1">wilderlab_rbclZ1</a></td>
+      <td><span class="badge-muted badge-rbcl">rbcL</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_RV</td>
+      <td><a href="#primer-12S–V5-F">12S–V5-F</a></td>
+      <td><a href="#primer-12S–V5-R">12S–V5-R</a></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_HD</td>
+      <td><a href="#primer-MiDeca-F">MiDeca-F</a></td>
+      <td><a href="#primer-MiDeca-R">MiDeca-R</a></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_TP</td>
+      <td><a href="#primer-A49425">A49425</a></td>
+      <td><a href="#primer-B49466">B49466</a></td>
+      <td><span class="badge-muted badge-trnl">trnL</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_GV</td>
+      <td><a href="#primer-wilderlab_GV_F">wilderlab_GV_F</a></td>
+      <td><a href="#primer-wilderlab_GV_R">wilderlab_GV_R</a></td>
+      <td><span class="badge-muted badge-its1">ITS1</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_UM</td>
+      <td><a href="#primer-F785e">F785e</a></td>
+      <td><a href="#primer-907R">907R</a></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td>V5</td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_WV</td>
+      <td><a href="#primer-wilderlab_WV_F">wilderlab_WV_F</a></td>
+      <td><a href="#primer-wilderlab_WV_R">wilderlab_WV_R</a></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_LG</td>
+      <td><a href="#primer-wilderlab_LG_F">wilderlab_LG_F</a></td>
+      <td><a href="#primer-MiFish-U-R">MiFish-U-R</a></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_BX</td>
+      <td><a href="#primer-18S_1F">18S_1F</a></td>
+      <td><a href="#primer-18S_400R">18S_400R</a></td>
+      <td><span class="badge-muted badge-18s">18S</span></td>
+      <td>V1-V3</td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_WG</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_EA</td>
+      <td><a href="#primer-wilderlab_EA_F">wilderlab_EA_F</a></td>
+      <td><a href="#primer-wilderlab_EA_R">wilderlab_EA_R</a></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_XG</td>
+      <td><a href="#primer-wilderlab_XG_F">wilderlab_XG_F</a></td>
+      <td><a href="#primer-wilderlab_XG_R">wilderlab_XG_R</a></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_GF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_XO</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_GD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_ZP</td>
+      <td><a href="#primer-wilderlab_ZP_F">wilderlab_ZP_F</a></td>
+      <td><a href="#primer-wilderlab_ZP_R">wilderlab_ZP_R</a></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td>wilderlab_YG</td>
+      <td><a href="#primer-wilderlab_YG_F">wilderlab_YG_F</a></td>
+      <td><a href="#primer-wilderlab_YG_R">wilderlab_YG_R</a></td>
+      <td><span class="badge-muted badge-cytb">cytB</span></td>
+      <td></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    
+        <h2 id="primers">Primers</h2>
+        <div class="table-container">
+        <table border="1" class="dataframe table table-striped table-sm">
+  <thead>
+    <tr style="text-align: right;">
+      <th>code</th>
+      <th>name</th>
+      <th>target_gene</th>
+      <th>target_region</th>
+      <th>direction</th>
+      <th>sequence</th>
+      <th>based_on</th>
+      <th>reference</th>
+      <th>link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a id="primer-jgLCO1490">jgLCO1490</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">TITCIACIAAYCAYAARGAYATTGG</span></td>
+      <td></td>
+      <td>Geller et al. 2013. Redesign of PCR primers for mitochondrial Cytochrome c oxidase subunit I for marine invertebrates and application in all-taxa biotic surveys.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12138" target="_blank">https://doi.org/10.1111/1755-0998.12138</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-jgHCO2198">jgHCO2198</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">TAIACYTCIGGRTGICCRAARAAYCA</span></td>
+      <td></td>
+      <td>Geller et al. 2013. Redesign of PCR primers for mitochondrial Cytochrome c oxidase subunit I for marine invertebrates and application in all-taxa biotic surveys.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12138" target="_blank">https://doi.org/10.1111/1755-0998.12138</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-mlCOIintF">mlCOIintF</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GGWACWGGWTGAACWGTWTAYCCYCC</span></td>
+      <td></td>
+      <td>Leray et al. 2013. A new versatile primer set targeting a short fragment of the mitochondrial COI region for metabarcoding metazoan diversity: application for characterizing coral reef fish gut contents.</td>
+      <td><a href="https://doi.org/10.1186/1742-9994-10-34" target="_blank">https://doi.org/10.1186/1742-9994-10-34</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiFish-U-F">MiFish-U-F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GTCGGTAAAACTCGTGCCAGC</span></td>
+      <td></td>
+      <td>Miya et al. 2015. MiFish, a set of universal PCR primers for metabarcoding environmental DNA from fishes: detection of more than 230 subtropical marine species.</td>
+      <td><a href="https://doi.org/10.1098/rsos.150088" target="_blank">https://doi.org/10.1098/rsos.150088</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiFish-U-R">MiFish-U-R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">CATAGTGGGGTATCTAATCCCAGTTTG</span></td>
+      <td></td>
+      <td>Miya et al. 2015. MiFish, a set of universal PCR primers for metabarcoding environmental DNA from fishes: detection of more than 230 subtropical marine species.</td>
+      <td><a href="https://doi.org/10.1098/rsos.150088" target="_blank">https://doi.org/10.1098/rsos.150088</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiFish-E-F">MiFish-E-F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GTTGGTAAATCTCGTGCCAGC</span></td>
+      <td></td>
+      <td>Miya et al. 2015. MiFish, a set of universal PCR primers for metabarcoding environmental DNA from fishes: detection of more than 230 subtropical marine species.</td>
+      <td><a href="https://doi.org/10.1098/rsos.150088" target="_blank">https://doi.org/10.1098/rsos.150088</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiFish-E-R">MiFish-E-R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">CATAGTGGGGTATCTAATCCTAGTTTG</span></td>
+      <td></td>
+      <td>Miya et al. 2015. MiFish, a set of universal PCR primers for metabarcoding environmental DNA from fishes: detection of more than 230 subtropical marine species.</td>
+      <td><a href="https://doi.org/10.1098/rsos.150088" target="_blank">https://doi.org/10.1098/rsos.150088</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiMammal-U-F">MiMammal-U-F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GGGTTGGTAAATTTCGTGCCAGC</span></td>
+      <td></td>
+      <td>Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12690" target="_blank">https://doi.org/10.1111/1755-0998.12690</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiMammal-U-R">MiMammal-U-R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">CATAGTGGGGTATCTAATCCCAGTTTG</span></td>
+      <td></td>
+      <td>Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12690" target="_blank">https://doi.org/10.1111/1755-0998.12690</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiMammal-E-F">MiMammal-E-F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GGACTGGTCAATTTCGTGCCAGC</span></td>
+      <td></td>
+      <td>Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12690" target="_blank">https://doi.org/10.1111/1755-0998.12690</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiMammal-E-R">MiMammal-E-R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">CATAGTGAGGTATCTAATCTCAGTTTG</span></td>
+      <td></td>
+      <td>Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12690" target="_blank">https://doi.org/10.1111/1755-0998.12690</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiMammal-B-F">MiMammal-B-F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GGGTTGGTTAATTTCGTGCCAGC</span></td>
+      <td></td>
+      <td>Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12690" target="_blank">https://doi.org/10.1111/1755-0998.12690</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiMammal-B-R">MiMammal-B-R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">CATAGTGGGGTATCTAATCCCAGTTTG</span></td>
+      <td></td>
+      <td>Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.</td>
+      <td><a href="https://doi.org/10.1111/1755-0998.12690" target="_blank">https://doi.org/10.1111/1755-0998.12690</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-L1848">L1848</a></td>
+      <td>teleo_F</td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">ACACCGCCCGTCACTCT</span></td>
+      <td></td>
+      <td>Valentini et al. 2016. Next-generation monitoring of aquatic biodiversity using environmental DNA metabarcoding.</td>
+      <td><a href="https://doi.org/10.1111/mec.13428" target="_blank">https://doi.org/10.1111/mec.13428</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-H1913">H1913</a></td>
+      <td>teleo_R</td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">CTTCCGGTACACTTACCATG</span></td>
+      <td></td>
+      <td>Valentini et al. 2016. Next-generation monitoring of aquatic biodiversity using environmental DNA metabarcoding.</td>
+      <td><a href="https://doi.org/10.1111/mec.13428" target="_blank">https://doi.org/10.1111/mec.13428</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-Vert-16S-eDNA-F1">Vert-16S-eDNA-F1</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">AGACGAGAAGACCCYdTGGAGCTT</span></td>
+      <td></td>
+      <td>Vences et al. 2016. Freshwater vertebrate metabarcoding on Illumina platforms using double-indexed primers of the mitochondrial 16S rRNA gene.</td>
+      <td><a href="https://doi.org/10.1007/s12686-016-0550-y" target="_blank">https://doi.org/10.1007/s12686-016-0550-y</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-Vert-16S-eDNA-R1">Vert-16S-eDNA-R1</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">GATCCAACATCGAGGTCGTAA</span></td>
+      <td></td>
+      <td>Vences et al. 2016. Freshwater vertebrate metabarcoding on Illumina platforms using double-indexed primers of the mitochondrial 16S rRNA gene.</td>
+      <td><a href="https://doi.org/10.1007/s12686-016-0550-y" target="_blank">https://doi.org/10.1007/s12686-016-0550-y</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-1380F">1380F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-18s">18S</span></td>
+      <td>V9</td>
+      <td>forward</td>
+      <td><span class="sequence">CCCTGCCHTTTGTACACAC</span></td>
+      <td></td>
+      <td>Amaral-Zettler et al. 2009. A Method for Studying Protistan Diversity Using Massively Parallel Sequencing of V9 Hypervariable Regions of Small-Subunit Ribosomal RNA Genes.</td>
+      <td><a href="https://doi.org/10.1371/journal.pone.0006372" target="_blank">https://doi.org/10.1371/journal.pone.0006372</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-1389F">1389F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-18s">18S</span></td>
+      <td>V9</td>
+      <td>forward</td>
+      <td><span class="sequence">TTGTACACACCGCCC</span></td>
+      <td></td>
+      <td>Amaral-Zettler et al. 2009. A Method for Studying Protistan Diversity Using Massively Parallel Sequencing of V9 Hypervariable Regions of Small-Subunit Ribosomal RNA Genes.</td>
+      <td><a href="https://doi.org/10.1371/journal.pone.0006372" target="_blank">https://doi.org/10.1371/journal.pone.0006372</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-1510R">1510R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-18s">18S</span></td>
+      <td>V9</td>
+      <td>reverse</td>
+      <td><span class="sequence">CCTTCYGCAGGTTCACCTAC</span></td>
+      <td></td>
+      <td>Amaral-Zettler et al. 2009. A Method for Studying Protistan Diversity Using Massively Parallel Sequencing of V9 Hypervariable Regions of Small-Subunit Ribosomal RNA Genes.</td>
+      <td><a href="https://doi.org/10.1371/journal.pone.0006372" target="_blank">https://doi.org/10.1371/journal.pone.0006372</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-fwhF1">fwhF1</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">YTCHACWAAYCAYAARGAYATYGG</span></td>
+      <td></td>
+      <td>Vamos et al. 2017. Short COI markers for freshwater macroinvertebrate metabarcoding.</td>
+      <td><a href="https://doi.org/10.3897/mbmg.1.14625" target="_blank">https://doi.org/10.3897/mbmg.1.14625</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-fwhR1">fwhR1</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">ARTCARTTWCCRAAHCCHCC</span></td>
+      <td></td>
+      <td>Vamos et al. 2017. Short COI markers for freshwater macroinvertebrate metabarcoding.</td>
+      <td><a href="https://doi.org/10.3897/mbmg.1.14625" target="_blank">https://doi.org/10.3897/mbmg.1.14625</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-fwhF2">fwhF2</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GGDACWGGWTGAACWGTWTAYCCHCC</span></td>
+      <td></td>
+      <td>Vamos et al. 2017. Short COI markers for freshwater macroinvertebrate metabarcoding.</td>
+      <td><a href="https://doi.org/10.3897/mbmg.1.14625" target="_blank">https://doi.org/10.3897/mbmg.1.14625</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-fwhR2">fwhR2</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">GTRATWGCHCCDGCAARWACWGG</span></td>
+      <td></td>
+      <td>Vamos et al. 2017. Short COI markers for freshwater macroinvertebrate metabarcoding.</td>
+      <td><a href="https://doi.org/10.3897/mbmg.1.14625" target="_blank">https://doi.org/10.3897/mbmg.1.14625</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-fwhR2n">fwhR2n</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">GTRATWGCHCCDGCTARWACWGG</span></td>
+      <td></td>
+      <td>Vamos et al. 2017. Short COI markers for freshwater macroinvertebrate metabarcoding.</td>
+      <td><a href="https://doi.org/10.3897/mbmg.1.14625" target="_blank">https://doi.org/10.3897/mbmg.1.14625</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_fwhF2">wilderlab_fwhF2</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">DACWGGWTGAACWGTWTAYCCHCC</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_coi_reverse">wilderlab_coi_reverse</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">GTTGTAATAAAATTAAYDGCYCCTARAATDGA</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-rbcL19b">rbcL19b</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-rbcl">rbcL</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">CTTCTTCAGGTGGAACTCCAG</span></td>
+      <td></td>
+      <td>Bradley et al. 2007. Plant DNA sequences from feces: potential means for assessing diets of wild primates.</td>
+      <td><a href="https://doi.org/10.1002/ajp.20384" target="_blank">https://doi.org/10.1002/ajp.20384</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-rbclZ1">rbclZ1</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-rbcl">rbcL</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">ATGTCACCACAAACAGAGACTAAAGCAAGT</span></td>
+      <td></td>
+      <td>Bradley et al. 2007. Plant DNA sequences from feces: potential means for assessing diets of wild primates.</td>
+      <td><a href="https://doi.org/10.1002/ajp.20384" target="_blank">https://doi.org/10.1002/ajp.20384</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_rbclZ1">wilderlab_rbclZ1</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-rbcl">rbcL</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">GTCACCACAAACAGAGACTAAAGCAAGT</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-12S–V5-F">12S–V5-F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td>V5</td>
+      <td>forward</td>
+      <td><span class="sequence">TAGAACAGGCTCCTCTAG</span></td>
+      <td></td>
+      <td>Riaz et al. 2001. ecoPrimers: Inference of new DNA barcode markers from whole genome sequence analysis.</td>
+      <td><a href="https://doi.org/10.1093/nar/gkr732" target="_blank">https://doi.org/10.1093/nar/gkr732</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-12S–V5-R">12S–V5-R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td>V5</td>
+      <td>reverse</td>
+      <td><span class="sequence">TTAGATACCCCACTATGC</span></td>
+      <td></td>
+      <td>Riaz et al. 2001. ecoPrimers: Inference of new DNA barcode markers from whole genome sequence analysis.</td>
+      <td><a href="https://doi.org/10.1093/nar/gkr732" target="_blank">https://doi.org/10.1093/nar/gkr732</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiDeca-F">MiDeca-F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GGACGATAAGACCCTATAAA</span></td>
+      <td></td>
+      <td>Komai et al. 2019. Development of a new set of PCR primers for eDNA metabarcoding decapod crustaceans.</td>
+      <td><a href="https://doi.org/10.3897/mbmg.3.33835" target="_blank">https://doi.org/10.3897/mbmg.3.33835</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-MiDeca-R">MiDeca-R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">ACGCTGTTATCCCTAAAGT</span></td>
+      <td></td>
+      <td>Komai et al. 2019. Development of a new set of PCR primers for eDNA metabarcoding decapod crustaceans.</td>
+      <td><a href="https://doi.org/10.3897/mbmg.3.33835" target="_blank">https://doi.org/10.3897/mbmg.3.33835</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-A49325">A49325</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-trnl">trnL</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">CGAAATCGGTAGACGCTACG</span></td>
+      <td></td>
+      <td>Taberlet et al. 2006. Power and limitations of the chloroplast Trn L (UAA) intron for plant DNA barcoding.</td>
+      <td><a href="https://doi.org/10.1093/nar/gkl938" target="_blank">https://doi.org/10.1093/nar/gkl938</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-B49863">B49863</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-trnl">trnL</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">GGGGATAGAGGGACTTGAAC</span></td>
+      <td></td>
+      <td>Taberlet et al. 2006. Power and limitations of the chloroplast Trn L (UAA) intron for plant DNA barcoding.</td>
+      <td><a href="https://doi.org/10.1093/nar/gkl938" target="_blank">https://doi.org/10.1093/nar/gkl938</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-A49425">A49425</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-trnl">trnL</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GGGCAATCCTGAGCCAA</span></td>
+      <td></td>
+      <td>Taberlet et al. 2006. Power and limitations of the chloroplast Trn L (UAA) intron for plant DNA barcoding.</td>
+      <td><a href="https://doi.org/10.1093/nar/gkl938" target="_blank">https://doi.org/10.1093/nar/gkl938</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-B49466">B49466</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-trnl">trnL</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">CCATTGAGTCTCTGCACCTATC</span></td>
+      <td></td>
+      <td>Taberlet et al. 2006. Power and limitations of the chloroplast Trn L (UAA) intron for plant DNA barcoding.</td>
+      <td><a href="https://doi.org/10.1093/nar/gkl938" target="_blank">https://doi.org/10.1093/nar/gkl938</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_ITS1_F">wilderlab_ITS1_F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-its1">ITS1</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GTGAACCTGCGGAAGGATC</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_ITS1_R">wilderlab_ITS1_R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-its1">ITS1</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">GATATCCGTTGCCGAGAGTC</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-F785e">F785e</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td>V5</td>
+      <td>forward</td>
+      <td><span class="sequence">GGATTAGATACCCTGGTA</span></td>
+      <td></td>
+      <td>Morey et al. 2006. Species-specific identification of Leptospiraceae by 16S rRNA gene sequencing.</td>
+      <td><a href="https://doi.org/10.1128/JCM.00670-06" target="_blank">https://doi.org/10.1128/JCM.00670-06</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-907R">907R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td>V5</td>
+      <td>reverse</td>
+      <td><span class="sequence">CCGTCAATTCMTTTRAGTTT</span></td>
+      <td></td>
+      <td>Lane et al. 1985. Rapid determination of 16S ribosomal RNA sequences for phylogenetic analyses.</td>
+      <td><a href="https://doi.org/10.1073/pnas.82.20.6955" target="_blank">https://doi.org/10.1073/pnas.82.20.6955</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_WV_F">wilderlab_WV_F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GACGAGAAGACCCTWTGGAGC</span></td>
+      <td><a href="#primer-16S_FishSyn_Short_forward">16S_FishSyn_Short_forward</a></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_WV_R">wilderlab_WV_R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">CCRYGGTCGCCCCAAC</span></td>
+      <td><a href="#primer-16S_FishSyn_Short_reverse">16S_FishSyn_Short_reverse</a></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-16S_FishSyn_Short_forward">16S_FishSyn_Short_forward</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GACGAGAAGACCCTGTGGAGC</span></td>
+      <td></td>
+      <td>Nester et al. 2020. Development and evaluation of fish eDNA metabarcoding assays facilitate the detection of cryptic seahorse taxa (family: Syngnathidae).</td>
+      <td><a href="https://doi.org/10.1002/edn3.93" target="_blank">https://doi.org/10.1002/edn3.93</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-16S_FishSyn_Short_reverse">16S_FishSyn_Short_reverse</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">CCGYGGTCGCCCCAAC</span></td>
+      <td></td>
+      <td>Nester et al. 2020. Development and evaluation of fish eDNA metabarcoding assays facilitate the detection of cryptic seahorse taxa (family: Syngnathidae).</td>
+      <td><a href="https://doi.org/10.1002/edn3.93" target="_blank">https://doi.org/10.1002/edn3.93</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-16S_FishSyn_Long_forward">16S_FishSyn_Long_forward</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GACGAGAAGACCCTDTGGAG</span></td>
+      <td></td>
+      <td>Nester et al. 2020. Development and evaluation of fish eDNA metabarcoding assays facilitate the detection of cryptic seahorse taxa (family: Syngnathidae).</td>
+      <td><a href="https://doi.org/10.1002/edn3.93" target="_blank">https://doi.org/10.1002/edn3.93</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-16S_FishSyn_Long_reverse">16S_FishSyn_Long_reverse</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">GRATTGCGNTGTTATCCCT</span></td>
+      <td></td>
+      <td>Nester et al. 2020. Development and evaluation of fish eDNA metabarcoding assays facilitate the detection of cryptic seahorse taxa (family: Syngnathidae).</td>
+      <td><a href="https://doi.org/10.1002/edn3.93" target="_blank">https://doi.org/10.1002/edn3.93</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_LG_F">wilderlab_LG_F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-12s">12S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">CGGCGTAAAGWGTGGTTAGG</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-18S_1F">18S_1F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-18s">18S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GCCAGTAGTCATATGCTTGTCT</span></td>
+      <td></td>
+      <td>Pochon et al. 2013. Evaluating detection limits of next-generation sequencing for the surveillance and monitoring of international marine pests.</td>
+      <td><a href="https://doi.org/10.1371/journal.pone.0073935" target="_blank">https://doi.org/10.1371/journal.pone.0073935</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-18S_701R">18S_701R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-18s">18S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">GGAGCTGGAATTACCGC</span></td>
+      <td></td>
+      <td>Pochon et al. 2013. Evaluating detection limits of next-generation sequencing for the surveillance and monitoring of international marine pests.</td>
+      <td><a href="https://doi.org/10.1371/journal.pone.0073935" target="_blank">https://doi.org/10.1371/journal.pone.0073935</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-18S_400R">18S_400R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-18s">18S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">GCCTGCTGCCTTCCTT</span></td>
+      <td></td>
+      <td>Pochon et al. 2013. Evaluating detection limits of next-generation sequencing for the surveillance and monitoring of international marine pests.</td>
+      <td><a href="https://doi.org/10.1371/journal.pone.0073935" target="_blank">https://doi.org/10.1371/journal.pone.0073935</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_EA_F">wilderlab_EA_F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">TATATAATGTTATTGTAACRGCGC</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_EA_R">wilderlab_EA_R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">CCCARCATCAAAGGAATCAAYCA</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_ZP_F">wilderlab_ZP_F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GGACGATAAGACCCTATAAADCTT</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_ZP_R">wilderlab_ZP_R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-16s">16S</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">CGCTGTTATCCCTAAAGTAAYTT</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_XG_F">wilderlab_XG_F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">GCAATYTCCCAGTATCARACACC</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_XG_R">wilderlab_XG_R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-coi">COI</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">GCAGCAAGMACGGGGAG</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_YG_F">wilderlab_YG_F</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-cytb">cytB</span></td>
+      <td></td>
+      <td>forward</td>
+      <td><span class="sequence">CBGAYATCTCYACCGCYTTYTC</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+    <tr>
+      <td><a id="primer-wilderlab_YG_R">wilderlab_YG_R</a></td>
+      <td></td>
+      <td><span class="badge-muted badge-cytb">cytB</span></td>
+      <td></td>
+      <td>reverse</td>
+      <td><span class="sequence">AAAGAAAGATGCGCCRTTRGCATG</span></td>
+      <td></td>
+      <td>Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.</td>
+      <td><a href="https://doi.org/10.7717/peerj.16963" target="_blank">https://doi.org/10.7717/peerj.16963</a></td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    </div>
+
+</body>
+</html>
