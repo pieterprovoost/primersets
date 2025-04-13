@@ -61,4 +61,5 @@ template = Path("templates/index.html").read_text()
 html = template.replace("{{SETS_TABLE}}", sets_html).replace("{{PRIMERS_TABLE}}", primers_html)
 
 Path("docs").mkdir(parents=True, exist_ok=True)
+Path("docs/.nojekyll").write_text("")
 Path("docs/index.html").write_text(html)
