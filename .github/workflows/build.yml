@@ -1,4 +1,4 @@
-name: Build and Deploy Website
+name: Build and deploy website
 
 on:
   push:
@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -16,11 +16,11 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: pip install pandas
 
-      - name: Generate HTML Site
-        run: python generate_site.py
+      - name: Generate site
+        run: python build_site.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
