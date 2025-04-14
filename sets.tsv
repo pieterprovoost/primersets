@@ -10,8 +10,8 @@ MiMammal-B	MiMammal-B-F	MiMammal-B-R	12S		bears		Ushio et al. 2017. Environmenta
 valentini_12S	L1848	H1913	12S		amphibians, fish		Valentini et al. 2016. Next-generation monitoring of aquatic biodiversity using environmental DNA metabarcoding.	https://doi.org/10.1111/mec.13428
 Vert-16S-eDNA	Vert-16S-eDNA-F1	Vert-16S-eDNA-R1	16S		amphibians, fish	250	Vences et al. 2016. Freshwater vertebrate metabarcoding on Illumina platforms using double-indexed primers of the mitochondrial 16S rRNA gene.	https://doi.org/10.1007/s12686-016-0550-y
 amaral_zettler_18S	1389F	1510R	18S	V9	protists		Amaral-Zettler et al. 2009. A Method for Studying Protistan Diversity Using Massively Parallel Sequencing of V9 Hypervariable Regions of Small-Subunit Ribosomal RNA Genes.	https://doi.org/10.1371/journal.pone.0006372
-fwh1	fwhF1	fwhR1	COI		invertebrates		Vamos et al. 2017. Short COI markers for freshwater macroinvertebrate metabarcoding.	https://doi.org/10.3897/mbmg.1.14625
-fwh2	fwhF2	fwhR2	COI		invertebrates		Vamos et al. 2017. Short COI markers for freshwater macroinvertebrate metabarcoding.	https://doi.org/10.3897/mbmg.1.14625
+fwh1	fwhF1	fwhR1	COI		invertebrates	178	Vamos et al. 2017. Short COI markers for freshwater macroinvertebrate metabarcoding.	https://doi.org/10.3897/mbmg.1.14625
+fwh2	fwhF2	fwhR2	COI		invertebrates	205	Vamos et al. 2017. Short COI markers for freshwater macroinvertebrate metabarcoding.	https://doi.org/10.3897/mbmg.1.14625
 16S_FishSyn_Short	16S_FishSyn_Short_forward	16S_FishSyn_Short_reverse	16S			80	Nester et al. 2020. Development and evaluation of fish eDNA metabarcoding assays facilitate the detection of cryptic seahorse taxa (family: Syngnathidae).	https://doi.org/10.1002/edn3.93
 16S_FishSyn_Long	16S_FishSyn_Long_forward	16S_FishSyn_Long_reverse	16S			200	Nester et al. 2020. Development and evaluation of fish eDNA metabarcoding assays facilitate the detection of cryptic seahorse taxa (family: Syngnathidae).	https://doi.org/10.1002/edn3.93
 MiDeca	MiDeca-F	MiDeca-R	16S			153–184	Komai et al. 2019. Development of a new set of PCR primers for eDNA metabarcoding decapod crustaceans.	https://doi.org/10.3897/mbmg.3.33835
