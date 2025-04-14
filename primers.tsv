@@ -12,6 +12,8 @@ MiMammal-E-F		12S		forward	GGACTGGTCAATTTCGTGCCAGC		Ushio et al. 2017. Environme
 MiMammal-E-R		12S		reverse	CATAGTGAGGTATCTAATCTCAGTTTG		Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.	https://doi.org/10.1111/1755-0998.12690
 MiMammal-B-F		12S		forward	GGGTTGGTTAATTTCGTGCCAGC		Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.	https://doi.org/10.1111/1755-0998.12690
 MiMammal-B-R		12S		reverse	CATAGTGGGGTATCTAATCCCAGTTTG		Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.	https://doi.org/10.1111/1755-0998.12690
+MiMammal-U/E-F		12S		forward	GTYGGTAAAWCTCGTGCCAGC		Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.	https://doi.org/10.1111/1755-0998.12690
+MiMammal-U/E-R		12S		reverse	CATAGTGGGGTATCTAATCCYAGTTTG		Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.	https://doi.org/10.1111/1755-0998.12690
 L1848	teleo_F	12S		forward	ACACCGCCCGTCACTCT		Valentini et al. 2016. Next-generation monitoring of aquatic biodiversity using environmental DNA metabarcoding.	https://doi.org/10.1111/mec.13428
 H1913	teleo_R	12S		reverse	CTTCCGGTACACTTACCATG		Valentini et al. 2016. Next-generation monitoring of aquatic biodiversity using environmental DNA metabarcoding.	https://doi.org/10.1111/mec.13428
 Vert-16S-eDNA-F1		16S		forward	AGACGAGAAGACCCYdTGGAGCTT		Vences et al. 2016. Freshwater vertebrate metabarcoding on Illumina platforms using double-indexed primers of the mitochondrial 16S rRNA gene.	https://doi.org/10.1007/s12686-016-0550-y

@@ -6,6 +6,7 @@ MiFish-E	MiFish-E-F	MiFish-E-R	12S		163-185	Miya et al. 2015. MiFish, a set of u
 MiMammal-U	MiMammal-U-F	MiMammal-U-R	12S			Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.	https://doi.org/10.1111/1755-0998.12690
 MiMammal-E	MiMammal-E-F	MiMammal-E-R	12S			Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.	https://doi.org/10.1111/1755-0998.12690
 MiMammal-B	MiMammal-B-F	MiMammal-B-R	12S			Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.	https://doi.org/10.1111/1755-0998.12690
+MiMammal-U/E	MiMammal-U/E-F	MiMammal-U/E-R	12S			Ushio et al. 2017. Environmental DNA enables detection of terrestrial mammals from forest pond water.	https://doi.org/10.1111/1755-0998.12690
 valentini_12S	L1848	H1913	12S			Valentini et al. 2016. Next-generation monitoring of aquatic biodiversity using environmental DNA metabarcoding.	https://doi.org/10.1111/mec.13428
 Vert-16S-eDNA	Vert-16S-eDNA-F1	Vert-16S-eDNA-R1	16S		250	Vences et al. 2016. Freshwater vertebrate metabarcoding on Illumina platforms using double-indexed primers of the mitochondrial 16S rRNA gene.	https://doi.org/10.1007/s12686-016-0550-y
 amaral_zettler_18S	1389F	1510R	18S	V9		Amaral-Zettler et al. 2009. A Method for Studying Protistan Diversity Using Massively Parallel Sequencing of V9 Hypervariable Regions of Small-Subunit Ribosomal RNA Genes.	https://doi.org/10.1371/journal.pone.0006372
