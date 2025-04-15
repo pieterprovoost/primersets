@@ -1,5 +1,5 @@
 assay	forward	reverse	gene	region	target_group	amplicon_size	reference	link
-folmer_COI	LCO1490	HC02198	COI		metazoa	658	Folmer et al. 1994. DNA primers for amplification of mitochondrial cytochrome c oxidase subunit I from diverse metazoan invertebrates.	https://doi.org/10.1186/1472-6785-13-34
+folmer_COI	LCO1490	HCO2198	COI		metazoa	658	Folmer et al. 1994. DNA primers for amplification of mitochondrial cytochrome c oxidase subunit I from diverse metazoan invertebrates.	https://doi.org/10.1186/1472-6785-13-34
 geller_COI	jgLCO1490	jgHCO2198	COI		metazoa		Geller et al. 2013. Redesign of PCR primers for mitochondrial Cytochrome c oxidase subunit I for marine invertebrates and application in all-taxa biotic surveys.	https://doi.org/10.1111/1755-0998.12138
 leray_COI	mlCOIintF	jgHCO2198	COI		metazoa	313	Leray et al. 2013. A new versatile primer set targeting a short fragment of the mitochondrial COI region for metabarcoding metazoan diversity: application for characterizing coral reef fish gut contents.	https://doi.org/10.1186/1742-9994-10-34
 lobo_COI	LoboF1	LoboR1	COI		metazoa		Lobo et al. 2013. Enhanced primers for amplification of DNA barcodes from a broad range of marine metazoans.	https://doi.org/10.1186/1472-6785-13-34
