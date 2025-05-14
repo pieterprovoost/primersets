@@ -19,15 +19,15 @@ fwh2	fwhF2	fwhR2	COI		invertebrates	205	Vamos et al. 2017. Short COI markers for
 MiDeca	MiDeca-F	MiDeca-R	16S			153–184	Komai et al. 2019. Development of a new set of PCR primers for eDNA metabarcoding decapod crustaceans.	https://doi.org/10.3897/mbmg.3.33835
 prie_veneroida	prie_veneroida_F	prie_veneroida_R	16S		venerid clams		Prié et al. 2020. Environmental DNA metabarcoding for freshwater bivalves biodiversity assessment: methods and results for the Western Palearctic (European sub-region).	https://doi.org/10.1007/s10750-020-04260-8
 wilderlab_BE	1380F	1510R	18S	V9		100-150	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
-wilderlab_BU	1389F	1510R	18S	V9	protists	80-140	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
-wilderlab_CI	wilderlab_fwhF2	wilderlab_coi_reverse	COI		invertebrates	78	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
-wilderlab_MZ	rbcL19b	wilderlab_rbclZ1	rbcL			106	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
-wilderlab_RV	12S–V5-F	12S–V5-R	12S		vertebrates		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_BU	1389F	1510R	18S	V9	protists	80-150	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_CI	wilderlab_fwhF2	wilderlab_coi_reverse	COI		invertebrates	76	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_MZ	rbcL19b	wilderlab_rbclZ1	rbcL			105	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_RV	12S–V5-F	12S–V5-R	12S		vertebrates	97-103	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
 wilderlab_HD	MiDeca-F	MiDeca-R	16S		crustaceans	153–184	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
-wilderlab_TP	A49425	B49466	trnL		vascular plants	25-80	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_TP	A49425	B49466	trnL		vascular plants	"25-80, 35–150	"	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
 wilderlab_GV	wilderlab_GV_F	wilderlab_GV_R	ITS1		vascular plants	200-300	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
-wilderlab_UM	F785e	907R	16S	V5	bacteria	96-108	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
-wilderlab_WV	wilderlab_WV_F	wilderlab_WV_R	16S		vertebrates	40-100	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_UM	F785e	907R	16S	V5	bacteria	96-108, 100-105	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_WV	wilderlab_WV_F	wilderlab_WV_R	16S		vertebrates	40-100, 35-150	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
 wilderlab_LG	wilderlab_LG_F	MiFish-U-R	12S		fish	110-115	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
 wilderlab_BX	18S_1F	18S_400R	18S	V1-V3	eukaryotes	390-410	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
 wilderlab_WG	wilderlab_WG_F	wilderlab_WG_R	16S		venerid clams	120-140	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
@@ -37,9 +37,12 @@ wilderlab_GF					fungi		Wilkinson et al. 2024. TICI: a taxon-independent communi
 wilderlab_XO					platypus		Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
 wilderlab_GD	SCLER5.8SFor	SCLER28SRev	ITS2		cnidaria	250-500	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
 wilderlab_ZP	wilderlab_ZP_F	wilderlab_ZP_R	16S				Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_ZC	wilderlab_ZC_F	wilderlab_ZC_R	mt16S			80-150		
 wilderlab_YG	wilderlab_YG_F	wilderlab_YG_R	cytB				Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
 wilderlab_GC			ITS2		basal metazoans	250-450	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
 wilderlab_RV						97-103	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
+wilderlab_DG	wilderlab_DG_F	wilderlab_DG_R	mt16S			40-150		
+wilderlab_LV	wilderlab_LV_F	wilderlab_LV_R	12S			100-165		
 CoralTTS2 	SCLER5.8SFor	SCLER28SRev	ITS2		scleractinia		Alexander et al. 2019. Development of a multi-assay approach for monitoring coral diversity using eDNA metabarcoding.	https://doi.org/10.1007/s00338-019-01875-9
 CoralTTS2_acro	SCLER5.8SFor	Coralacro_874Rev	ITS2		porifera		Alexander et al. 2019. Development of a multi-assay approach for monitoring coral diversity using eDNA metabarcoding.	https://doi.org/10.1007/s00338-019-01875-9
 Sponge16S	Sponge16S_377For	Sponge16S_583Rev	16S		porifera		Alexander et al. 2019. Development of a multi-assay approach for monitoring coral diversity using eDNA metabarcoding.	https://doi.org/10.1007/s00338-019-01875-9
