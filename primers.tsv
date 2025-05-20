@@ -81,3 +81,7 @@ wilderlab_LV_F		12S			forward	TCGTGCCAGCCRCCGC
 wilderlab_LV_R		12S			reverse	CATAGTGGGGTATCTAATCCCAGTTTG			
 prie_veneroida_F		16S		venerid clams	forward	CSCTGTTATCCCYRCGGTA		Prié et al. 2020. Environmental DNA metabarcoding for freshwater bivalves biodiversity assessment: methods and results for the Western Palearctic (European sub-region).	https://doi.org/10.1007/s10750-020-04260-8
 prie_veneroida_R		16S		venerid clams	reverse	TTDTAAAAGCCGAGAAGACCC		Prié et al. 2020. Environmental DNA metabarcoding for freshwater bivalves biodiversity assessment: methods and results for the Western Palearctic (European sub-region).	https://doi.org/10.1007/s10750-020-04260-8
+Fung02_F		ITS1		fungi	forward	GGAAGTAAAAGTCGTAACAAGG		Epp et al. 2021. New environmental metabarcodes for analysing soil DNA: potential for studying past and present ecosystems	https://doi.org/10.1111/j.1365-294x.2012.05537.x
+Fung02_R		ITS1		fungi	reverse	CAAGAGATCCGTTGYTGAAAGTK		Epp et al. 2021. New environmental metabarcodes for analysing soil DNA: potential for studying past and present ecosystems	https://doi.org/10.1111/j.1365-294x.2012.05537.x
+MarVer1F		12S		mammals	forward	CGTGCCAGCCACCGCG		Valsecchi et al. 2020. Novel universal primers for metabarcoding environmental DNA surveys of marine mammals and other marine vertebrates.	https://doi.org/10.1002/edn3.72
+MarVer1R		12S		mammals	reverse	GGGTATCTAATCCYAGTTTG		Valsecchi et al. 2020. Novel universal primers for metabarcoding environmental DNA surveys of marine mammals and other marine vertebrates.	https://doi.org/10.1002/edn3.72
