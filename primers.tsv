@@ -35,8 +35,8 @@ wilderlab_coi_reverse		COI			reverse	GTTGTAATAAAATTAAYDGCYCCTARAATDGA		Wilkinson
 rbcL19b		rbcL			forward	CTTCTTCAGGTGGAACTCCAG		Bradley et al. 2007. Plant DNA sequences from feces: potential means for assessing diets of wild primates.	https://doi.org/10.1002/ajp.20384
 rbclZ1		rbcL			reverse	ATGTCACCACAAACAGAGACTAAAGCAAGT		Bradley et al. 2007. Plant DNA sequences from feces: potential means for assessing diets of wild primates.	https://doi.org/10.1002/ajp.20384
 wilderlab_rbclZ1		rbcL			reverse	GTCACCACAAACAGAGACTAAAGCAAGT	rbclZ1	Wilkinson et al. 2024. TICI: a taxon-independent community index for eDNA-based ecological health assessment.	https://doi.org/10.7717/peerj.16963
-12S–V5-F		12S	V5		forward	TAGAACAGGCTCCTCTAG		Riaz et al. 2001. ecoPrimers: Inference of new DNA barcode markers from whole genome sequence analysis.	https://doi.org/10.1093/nar/gkr732
-12S–V5-R		12S	V5		reverse	TTAGATACCCCACTATGC		Riaz et al. 2001. ecoPrimers: Inference of new DNA barcode markers from whole genome sequence analysis.	https://doi.org/10.1093/nar/gkr732
+12S–V5-F		12S	V5		forward	TTAGATACCCCACTATGC		Riaz et al. 2001. ecoPrimers: Inference of new DNA barcode markers from whole genome sequence analysis.	https://doi.org/10.1093/nar/gkr732
+12S–V5-R		12S	V5		reverse	TAGAACAGGCTCCTCTAG		Riaz et al. 2001. ecoPrimers: Inference of new DNA barcode markers from whole genome sequence analysis.	https://doi.org/10.1093/nar/gkr732
 MiDeca-F		16S			forward	GGACGATAAGACCCTATAAA		Komai et al. 2019. Development of a new set of PCR primers for eDNA metabarcoding decapod crustaceans.	https://doi.org/10.3897/mbmg.3.33835
 MiDeca-R		16S			reverse	ACGCTGTTATCCCTAAAGT		Komai et al. 2019. Development of a new set of PCR primers for eDNA metabarcoding decapod crustaceans.	https://doi.org/10.3897/mbmg.3.33835
 A49325		trnL			forward	CGAAATCGGTAGACGCTACG		Taberlet et al. 2006. Power and limitations of the chloroplast Trn L (UAA) intron for plant DNA barcoding.	https://doi.org/10.1093/nar/gkl938
