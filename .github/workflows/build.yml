@@ -26,6 +26,23 @@ jobs:
       - name: Build site
         run: python build_site.py
 
+      - name: Replace with redirect
+        run: |
+          cat > docs/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="UTF-8">
+            <link rel="canonical" href="https://primersets.com">
+            <meta http-equiv="refresh" content="0; url=https://primersets.com">
+            <script>window.location.replace("https://primersets.com");</script>
+          </head>
+          <body>
+            <a href="https://primersets.com">Redirecting to primersets.com…</a>
+          </body>
+          </html>
+          EOF
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
